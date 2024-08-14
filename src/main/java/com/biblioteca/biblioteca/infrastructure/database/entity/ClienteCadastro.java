@@ -1,12 +1,12 @@
 package com.biblioteca.biblioteca.infrastructure.database.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Builder
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 
@@ -19,14 +19,14 @@ public class ClienteCadastro {
     private String nome;
     private String sobreNome;
 
-    @Embedded
-    private ClienteEndereco endereco;
-
     private String dataNascimento;
     private String rg;
     private String cpf;
     private String sexo;
     private String email;
     private String telefone;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private ClienteEndereco endereco;
 
 }
