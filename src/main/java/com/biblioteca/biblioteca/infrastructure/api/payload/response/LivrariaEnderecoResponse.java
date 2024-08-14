@@ -1,6 +1,6 @@
-package com.biblioteca.biblioteca.infrastructure.api.payload.request;
+package com.biblioteca.biblioteca.infrastructure.api.payload.response;
 
-public record ClienteEnderecoRequest(
+public record LivrariaEnderecoResponse (
 
         String logradouro,
         String numero,

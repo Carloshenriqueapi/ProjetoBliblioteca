@@ -1,12 +1,11 @@
-package com.biblioteca.biblioteca.infrastructure.api.payload.request;
+package com.biblioteca.biblioteca.infrastructure.api.payload.response;
 
-public record ClienteCadastroRequest(
+public record ClienteCadastroResponse(
 
         Long id,
-
         String nome,
         String sobreNome,
-        ClienteEnderecoRequest endereco,
+        ClienteEnderecoResponse endereco,
         String dataNascimento,
         String rg,
         String cpf,
