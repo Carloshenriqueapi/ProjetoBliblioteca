@@ -73,10 +73,7 @@ public ClienteCadastroResponse applyResponse(ClienteCadastroResponse clienteCada
                         clienteCadastro.endereco().cep(),
                         clienteCadastro.endereco().uf())
         );
-
-
-
-
 }
+
 }
 
